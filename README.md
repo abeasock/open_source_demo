@@ -3,6 +3,7 @@
 This repository contains the Dockerfile and assests used to build the Docker image shown during the open source demo.
 
 The Dockerfile installs the following tools:
+
 	- Java
 	- Anaconda (Python 2.7)
 	- Apache Spark 2.2.0
@@ -12,6 +13,7 @@ The Dockerfile installs the following tools:
 	- Apache Livy
 
 The assets folder contains:
+
 	- lending_club folder contains the lending club data
 	- lending_club.db - the SQLite3 Database created for Superset
 	- loans_updated.csv - loan.csv prepped for building lending_club.db
@@ -37,10 +39,10 @@ Steps to build a Docker image:
 
 	2. Build the image
 	
-		  ````
-		  cd <directory containing the Dockerfile>
-		  docker build open_source_demo open_source_demo
-		  ````
+	````
+	  cd <directory containing the Dockerfile>
+	  docker build open_source_demo open_source_demo
+	````
 
 
 	3. Run the Docker image
