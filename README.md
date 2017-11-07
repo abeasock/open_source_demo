@@ -43,15 +43,15 @@ Steps to build a Docker image: <br>
 	   `docker exec -it open_source_demo bash`
 	2. Run the following command & the prompts below will appear in the command line to set up the user information for Superset <br>
 	   *Note: Only need to create username and password, you can hit enter for other prompts (i.e. first name)* <br>
-	   `./assets/initial_start.sh`
+	   `./assets/initial_start.sh` <br>
 	   
 	   ```
-	Username [admin]: admin
-	User first name [admin]:
-	User last name [user]:
-	Email [admin@fab.org]:
-	Password:
-	Repeat for confirmation:
+	   Username [admin]: admin
+	   User first name [admin]:
+	   User last name [user]:
+	   Email [admin@fab.org]:
+	   Password:
+	   Repeat for confirmation:
 	   ```
 
 To access Zeppelin: open Browser and go to: http://localhost:19090 <br><br>
