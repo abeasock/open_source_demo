@@ -28,21 +28,17 @@ run_open_source_demo.sh - file to quick start the Docker image on Mac
 Download and install Docker. 
 
 ## Build
-Steps to build a Docker image:
+Steps to build a Docker image: <br>
 	1. Clone this repo
-		git clone https://github.com/abeasock/open_source_demo
-
-		or 
-
-		Manually download by clicking the "*Clone or Download button above*" and "*Download Zip*"
+		git clone https://github.com/abeasock/open_source_demo <br>
+		or <br>
+		Manually download by clicking the "**Clone or Download button above**" and "**Download Zip**" <br>
 	2. Build the image
 	   `cd <directory containing the Dockerfile>`
 	   `docker build open_source_demo open_source_demo`
-	3. Run the Docker image
-  
-    ```cd <directory containing the run_open_source_demo file>
-    run_open_source_demo.bat or run_open_source_demo.sh```
-
+	3. Run the Docker image  
+    	   `cd <directory containing the run_open_source_demo file>`
+    	   `run_open_source_demo.bat or run_open_source_demo.sh`
 	4. Once everything is started up, there are a few additional set up tasks needed for the first time running the container:
 		1. First to run commands in a running container:
 				docker exec -it open_source_demo bash 
