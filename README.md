@@ -61,4 +61,4 @@ To run flask app run command below. Open Browser and go to: http://localhost:155
 `/spark/bin/spark-submit --py-files /sparkling-water-2.1.14/py/build/dist/h2o_pysparkling_2.1-2.1.14.zip /assets/flask_deployment_demo/loan_app_demo.py`
 
 ## Import loans.json into Zeppelin Notebook
-Go to Zeppelin, click "Import Note", click 'add from URL", and enter 
+Go to Zeppelin, click "Import Note", click 'Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/loans.json
