@@ -2,23 +2,21 @@
 
 This repository contains the Dockerfile and assests used to build the Docker image shown during the open source demo.
 
-The Dockerfile installs the following tools:
-
-	- Java
-	- Anaconda (Python 2.7)
-	- Apache Spark 2.2.0
-	- Zeppelin
-	- H2O Sparkling Water
-	- Apache Superset
-	- Apache Livy
+The Dockerfile installs the following tools: <br>
+	- Java <br>
+	- Anaconda (Python 2.7) <br>
+	- Apache Spark 2.2.0 <br>
+	- Apache Zeppelin <br>
+	- H2O Sparkling Water <br>
+	- Apache Superset <br>
+	- Apache Livy <br>
 
 The assets folder contains:
-
-	- lending_club folder contains the lending club data
-	- lending_club.db - the SQLite3 Database created for Superset
-	- loans_updated.csv - loan.csv prepped for building lending_club.db
-	- flask_deployment_demo - folder contains the flask app used to deploy the H2O model built in the Zeppelin notebook loans.json
-	- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data
+	- lending_club folder contains the lending club data <br>
+	- lending_club.db - the SQLite3 Database created for Superset <br>
+	- loans_updated.csv - loan.csv prepped for building lending_club.db <br>
+	- flask_deployment_demo - folder contains the flask app used to deploy the H2O model built in the Zeppelin notebook loans.json <br>
+	- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
 <br>
 run_open_source_demo.bat - file to quick start the Docker image on Windows
 <br>
