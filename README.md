@@ -18,7 +18,7 @@ The **assets** folder contains: <br>
 &nbsp;&nbsp;&nbsp;- flask_deployment_demo - folder contains the flask app used to deploy the model built in loans.json <br>
 &nbsp;&nbsp;&nbsp;- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
 <br>
-Additional Files: <br>
+**Additional Files:** <br>
 run_open_source_demo.bat - file to quick start the Docker image on Windows
 <br>
 run_open_source_demo.sh - file to quick start the Docker image on Mac
