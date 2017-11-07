@@ -24,7 +24,8 @@ run_open_source_demo.bat - file to quick start the Docker image on Windows
 run_open_source_demo.sh - file to quick start the Docker image on Mac
 
 ## Getting Started
-Download and install Docker. 
+This assumes you have Docker installed and basic knowledge of using it. 
+<Docker>(https://www.docker.com/)
 
 ## Build
 Steps to build a Docker image: <br>
