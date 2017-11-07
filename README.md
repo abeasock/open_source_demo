@@ -43,9 +43,9 @@ Steps to build a Docker image: <br>
 	   `docker exec -it open_source_demo bash`
 	2. Run the command & follow the prompts to set up the user information for Superset <br>
 	   `./assets/initial_start.sh` <br>
-	   Note: Only need to create username and password, you can hit enter for other prompts (i.e. first name) <br>
-To access Zeppelin: open Browser and go to: http://localhost:19090 <br>
-To access Superset: open Browser and go to: http://localhost:18088 <br>
+	   Note: Only need to create username and password, you can hit enter for other prompts (i.e. first name) <br><br>
+To access Zeppelin: open Browser and go to: http://localhost:19090 <br><br>
+To access Superset: open Browser and go to: http://localhost:18088 <br><br>
 To run flask app run command below. Open Browser and go to: http://localhost:15555/ <br>
 `/spark/bin/spark-submit --py-files /sparkling-water-2.1.14/py/build/dist/h2o_pysparkling_2.1-2.1.14.zip /assets/flask_deployment_demo/loan_app_demo.py`
 
