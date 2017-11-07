@@ -12,11 +12,11 @@ The **Dockerfile** installs the following tools: <br>
 &nbsp;&nbsp;&nbsp;- Apache Livy <br>
 
 The **assets** folder contains:
-	- lending_club folder contains the lending club data <br>
-	- lending_club.db - the SQLite3 Database created for Superset <br>
-	- loans_updated.csv - loan.csv prepped for building lending_club.db <br>
-	- flask_deployment_demo - folder contains the flask app used to deploy the H2O model built in the Zeppelin notebook loans.json <br>
-	- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
+&nbsp;&nbsp;&nbsp;- lending_club folder contains the lending club data <br>
+&nbsp;&nbsp;&nbsp;- lending_club.db - the SQLite3 Database created for Superset <br>
+&nbsp;&nbsp;&nbsp;- loans_updated.csv - loan.csv prepped for building lending_club.db <br>
+&nbsp;&nbsp;&nbsp;- flask_deployment_demo - folder contains the flask app used to deploy the model built in loans.json <br>
+&nbsp;&nbsp;&nbsp;- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
 <br>
 Additional Files: 
 run_open_source_demo.bat - file to quick start the Docker image on Windows
