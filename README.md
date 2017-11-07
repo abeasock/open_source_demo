@@ -41,9 +41,18 @@ Steps to build a Docker image: <br>
 4. Once everything is started up, there are a few additional set up tasks needed for the first time running the container: <br>
 	1. First to run commands in a running container: <br>
 	   `docker exec -it open_source_demo bash`
-	2. Run the command & follow the prompts to set up the user information for Superset <br>
+	2. Run the following command & the prompts below will appear in the command line to set up the user information for Superset <br>
+	   *Note: Only need to create username and password, you can hit enter for other prompts (i.e. first name)* <br>
 	   `./assets/initial_start.sh` <br>
-	   *Note: Only need to create username and password, you can hit enter for other prompts (i.e. first name)* <br><br>
+	   
+	   ```
+	   	Username [admin]: admin
+		User first name [admin]:
+		User last name [user]:
+		Email [admin@fab.org]:
+		Password:
+		Repeat for confirmation:
+	   ```
 
 To access Zeppelin: open Browser and go to: http://localhost:19090 <br><br>
 To access Superset: open Browser and go to: http://localhost:18088 <br><br>
