@@ -29,21 +29,21 @@ Download and install Docker.
 
 ## Build
 Steps to build a Docker image: <br>
-	1. Clone this repo
-		git clone https://github.com/abeasock/open_source_demo <br>
-		or <br>
-		Manually download by clicking the "**Clone or Download button above**" and "**Download Zip**" <br>
-	2. Build the image <br>
-	   `cd <directory containing the Dockerfile>` <br>
-	   `docker build open_source_demo open_source_demo` <br>
-	3. Run the Docker image <br>
-    	   `cd <directory containing the run_open_source_demo file>` <br>
-    	   `run_open_source_demo.bat or run_open_source_demo.sh` <br>
-	4. Once everything is started up, there are a few additional set up tasks needed for the first time running the container: <br>
-		1. First to run commands in a running container:
-				docker exec -it open_source_demo bash 
-		2. Run the command & follow the prompts to set up the user information for Superset
-				./assets/initial_start.sh
+1. Clone this repo
+	git clone https://github.com/abeasock/open_source_demo <br>
+	or <br>
+	Manually download by clicking the "**Clone or Download button above**" and "**Download Zip**" <br><br>
+2. Build the image <br>
+    cd <directory containing the Dockerfile> <br>
+   `docker build open_source_demo open_source_demo` <br><br>
+3. Run the Docker image <br>
+   `cd <directory containing the run_open_source_demo file>` <br>
+   `run_open_source_demo.bat or run_open_source_demo.sh` <br><br>
+4. Once everything is started up, there are a few additional set up tasks needed for the first time running the container: <br>
+	1. First to run commands in a running container:
+			docker exec -it open_source_demo bash 
+	2. Run the command & follow the prompts to set up the user information for Superset
+			./assets/initial_start.sh
 
 
 
