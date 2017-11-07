@@ -11,7 +11,7 @@ The **Dockerfile** installs the following tools: <br>
 &nbsp;&nbsp;&nbsp;- Apache Superset <br>
 &nbsp;&nbsp;&nbsp;- Apache Livy <br>
 
-The **assets** folder contains:
+The **assets** folder contains: <br>
 &nbsp;&nbsp;&nbsp;- lending_club folder contains the lending club data <br>
 &nbsp;&nbsp;&nbsp;- lending_club.db - the SQLite3 Database created for Superset <br>
 &nbsp;&nbsp;&nbsp;- loans_updated.csv - loan.csv prepped for building lending_club.db <br>
