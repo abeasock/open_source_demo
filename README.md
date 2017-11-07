@@ -18,11 +18,10 @@ The **assets** folder contains:
 &nbsp;&nbsp;&nbsp;- flask_deployment_demo - folder contains the flask app used to deploy the model built in loans.json <br>
 &nbsp;&nbsp;&nbsp;- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
 <br>
-Additional Files: 
+Additional Files: <br>
 run_open_source_demo.bat - file to quick start the Docker image on Windows
 <br>
 run_open_source_demo.sh - file to quick start the Docker image on Mac
-
 
 ## Getting Started
 Download and install Docker. 
@@ -44,7 +43,7 @@ Steps to build a Docker image: <br>
 	   `docker exec -it open_source_demo bash`
 	2. Run the command & follow the prompts to set up the user information for Superset <br>
 	   `./assets/initial_start.sh` <br>
-
+	   Note: Only need to create username and password, you can hit enter for other prompts (i.e. first name) <br>
 To access Zeppelin: open Browser and go to: http://localhost:19090 <br>
 To access Superset: open Browser and go to: http://localhost:18088 <br>
 To run flask app run command below. Open Browser and go to: http://localhost:15555/ <br>
