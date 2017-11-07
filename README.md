@@ -36,10 +36,10 @@ Steps to build a Docker image:
 		Manually download by clicking the "Clone or Download button above" and "Download Zip"
 
 	2. Build the image
-		  ```
+		  ````
 		  cd <directory containing the Dockerfile>
 		  docker build open_source_demo open_source_demo
-		  ```
+		  ````
 
 
 	3. Run the Docker image
