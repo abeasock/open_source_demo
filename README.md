@@ -3,13 +3,13 @@
 This repository contains the Dockerfile and assests used to build the Docker image shown during the open source demo.
 
 The **Dockerfile** installs the following tools: <br>
-	- Java <br>
-	- Anaconda (Python 2.7) <br>
-	- Apache Spark 2.2.0 <br>
-	- Apache Zeppelin <br>
-	- H2O Sparkling Water <br>
-	- Apache Superset <br>
-	- Apache Livy <br>
+&nbsp;&nbsp;&nbsp;- Java <br>
+&nbsp;&nbsp;&nbsp;- Anaconda (Python 2.7) <br>
+&nbsp;&nbsp;&nbsp;- Apache Spark 2.2.0 <br>
+&nbsp;&nbsp;&nbsp;- Apache Zeppelin <br>
+&nbsp;&nbsp;&nbsp;- H2O Sparkling Water <br>
+&nbsp;&nbsp;&nbsp;- Apache Superset <br>
+&nbsp;&nbsp;&nbsp;- Apache Livy <br>
 
 The **assets** folder contains:
 	- lending_club folder contains the lending club data <br>
