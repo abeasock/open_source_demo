@@ -55,9 +55,10 @@ Steps to build a Docker image: <br>
 	   Repeat for confirmation:
 	   ```
 
+## Usage
 To access Zeppelin: open Browser and go to: http://localhost:19090 <br><br>
 To access Superset: open Browser and go to: http://localhost:18088 <br><br>
-Flask app can be run using the command below. AFter running the command, open Browser and go to: http://localhost:15555/ <br>
+Flask app can be run using the command below. After running the command, open Browser and go to: http://localhost:15555/ <br>
 `/spark/bin/spark-submit --py-files /sparkling-water-2.1.14/py/build/dist/h2o_pysparkling_2.1-2.1.14.zip /assets/flask_deployment_demo/loan_app_demo.py`
 
 ## Import loans.json into Zeppelin Notebook
