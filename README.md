@@ -36,7 +36,7 @@ Steps to build a Docker image: <br>
 2. Build the image <br>
    `cd <directory containing the Dockerfile>` <br>
    `docker build -t open_source_demo .` <br>
-   Note: A path is a mandatory argument for the build command. I used . because I used cd in the previous step to navigate to the 	    directory with the dockerfile. I used the -t option to tag the image. <br><br>
+   *Note: A path is a mandatory argument for the build command. I used . because I navigated in the command line to the directory 	     containing the dockerfile in the previous step. I used the -t option to tag the image.* <br><br>
 3. Run the Docker image <br>
    `cd <directory containing the run_open_source_demo file>` <br>
    `run_open_source_demo.bat or run_open_source_demo.sh` <br><br>
