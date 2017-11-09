@@ -56,11 +56,23 @@ Steps to build a Docker image: <br>
 	   Repeat for confirmation:
 	   ```
 
-## Usage
-To access Zeppelin: open Browser and go to: http://localhost:19090 <br><br>
-To access Superset: open Browser and go to: http://localhost:18088 <br><br>
+## Ports
+Zeppelin: http://localhost:19090 <br>
+Superset: http://localhost:18088 <br>
+Flask: http://localhost:15555 <br><br>
+
+## Zeppelin Notebook
+To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click 'Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/loans.json
+
+## Flask
 Flask app can be run using the command below. After running the command, open Browser and go to: http://localhost:15555/ <br>
 `/spark/bin/spark-submit --py-files /sparkling-water-2.1.14/py/build/dist/h2o_pysparkling_2.1-2.1.14.zip /assets/flask_deployment_demo/loan_app_demo.py`
 
-## Import loans.json into Zeppelin Notebook
-Go to Zeppelin, click "Import Note", click 'Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/loans.json
+## Superset
+Currently, I have an error importing superset_dashboard_loans.pickle into Superset. <br>
+To add an existing database to Superset:
+&nbsp;&nbsp;- Open Supserset in the browser
+&nbsp;&nbsp;- Click 'Sources' in the upper pane
+&nbsp;&nbsp;- Click Databases
+This will show a list of databases connected to Superset. To add a new one, click the + in the right upper corner. This will take you to an Add Database page. 
+
