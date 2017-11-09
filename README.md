@@ -70,9 +70,9 @@ Flask app can be run using the command below. After running the command, open Br
 
 ## Superset
 Currently, I have an error importing superset_dashboard_loans.pickle into Superset. <br>
-To add an existing database to Superset:
-&nbsp;&nbsp;- Open Supserset in the browser
-&nbsp;&nbsp;- Click 'Sources' in the upper pane
-&nbsp;&nbsp;- Click Databases
+To add an existing database to Superset: <br>
+&nbsp;&nbsp;- Open Supserset in the browser <br>
+&nbsp;&nbsp;- Click 'Sources' in the upper pane <br>
+&nbsp;&nbsp;- Click Databases <br>
 This will show a list of databases connected to Superset. To add a new one, click the + in the right upper corner. This will take you to an Add Database page. 
 
