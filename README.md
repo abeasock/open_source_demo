@@ -35,12 +35,11 @@ Steps to build a Docker image: <br>
 	Manually download by clicking the "**Clone or Download button above**" and "**Download Zip**" <br><br>
 2. Build the image <br>
    `cd <directory containing the Dockerfile>` <br>
-   `docker build -t open_source_demo .` <br><br>
+   `docker build -t open_source_demo .` <br>
+   Note: A path is a mandatory argument for the build command. I used . because I used cd in the previous step to navigate to the 	    directory with the dockerfile. I used the -t option to tag the image. <br><br>
 3. Run the Docker image <br>
    `cd <directory containing the run_open_source_demo file>` <br>
    `run_open_source_demo.bat or run_open_source_demo.sh` <br><br>
-   
-   Note: A path is a mandatory argument for the build command. I used . because I used cd in the previous step to navigate to the 	    directory with the dockerfile. I used the -t option to tag the image
 4. Once everything is started up, there are a few additional set up tasks needed for the first time running the container: <br>
 	1. First to run commands in a running container: <br>
 	   `docker exec -it open_source_demo bash`
