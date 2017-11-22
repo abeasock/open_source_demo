@@ -62,7 +62,7 @@ Superset: http://localhost:18088 <br>
 Flask: http://localhost:15555 <br><br>
 
 ## Zeppelin Notebook
-To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click 'Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/loans.json
+To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click 'Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json
 
 ## Flask
 Flask app can be run using the command below. After running the command, open Browser and go to: http://localhost:15555/ <br>
