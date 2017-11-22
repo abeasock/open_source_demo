@@ -1,8 +1,8 @@
 # Open Source Demo
 
-This repository contains the Dockerfile and assests used to build the Docker image shown during the open source demo. 
+This repository contains the Dockerfile and assests used to build the Docker image shown during the open source demo. <br>
 
-**To view the Zeppelin Notebook shown in the demo without installing the Docker image: go to** https://www.zepl.com/explore **and paste the following link into the search bar** https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json 
+<span style="color:red">**To view the Zeppelin Notebook shown in the demo without installing the Docker image: go to**</span> https://www.zepl.com/explore **and paste the following link into the search bar** https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json 
 
 The **Dockerfile** installs the following tools: <br>
 &nbsp;&nbsp;&nbsp;- Java <br>
