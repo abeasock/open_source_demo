@@ -69,10 +69,5 @@ Flask app can be run using the command below. After running the command, open Br
 `/spark/bin/spark-submit --py-files /sparkling-water-2.1.14/py/build/dist/h2o_pysparkling_2.1-2.1.14.zip /assets/flask_deployment_demo/loan_app_demo.py`
 
 ## Superset
-Currently, I have an error importing superset_dashboard_loans.pickle into Superset. <br><br>
-To add an existing database to Superset: <br>
-&nbsp;&nbsp;- Open Supserset in the browser <br>
-&nbsp;&nbsp;- Click 'Sources' in the upper pane <br>
-&nbsp;&nbsp;- Click Databases <br>
-This will show a list of databases connected to Superset. To add a new one, click the + in the right upper corner. This will take you to an Add Database page. 
-
+To add the saved dashboard used in the demo, once Superset is open click 'Manage' in the top banner > 'Import Dashboards' > 'Choose File' <where you downloaded this repository>/assets/superset_dashboard_loans.pickle and click 'Upload'<br>
+The dashboard for Lending Club should now be avialable under Dashboards<br><br>
