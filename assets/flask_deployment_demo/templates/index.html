@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+    <title>Demo</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+	<meta name="author" content="" />
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,800italic,400,600,800" type="text/css">
+	<link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css" />		
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css" />	
+	<link rel="stylesheet" href="../static/js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.css" type="text/css" />		
+	<link rel="stylesheet" href="../static/js/plugins/select2/select2.css" type="text/css" />
+	<link rel="stylesheet" href="../static/js/plugins/magnific/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="../static/js/plugins/icheck/skins/minimal/blue.css" type="text/css" />
+	<link rel="stylesheet" href="../static/css/App.css" type="text/css" />
+	<link rel="stylesheet" href="../static/css/custom.css" type="text/css" />
+	
+	<link rel="stylesheet" href="../static/js/plugins/datepicker/datepicker.css" type="text/css" />
+	<link rel="stylesheet" href="../static/js/plugins/simplecolorpicker/jquery.simplecolorpicker.css" type="text/css" />
+	<link rel="stylesheet" href="../static/js/plugins/timepicker/bootstrap-timepicker.css" type="text/css" />
+	<link rel="stylesheet" href="../static/js/plugins/fileupload/bootstrap-fileupload.css" type="text/css" />
+	
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<header id="header">
+		<!--
+		<h1 id="site-logo">
+			<a href="./index.html">
+				<img src="./img/logos/logo.png" alt="Site Logo" />
+			</a>
+		</h1>	
+		-->
+
+		<a href="javascript:;" data-toggle="collapse" data-target=".top-bar-collapse" id="top-bar-toggle" class="navbar-toggle collapsed">
+			<i class="fa fa-cog"></i>
+		</a>
+
+
+	</header> <!-- header -->
+
+	<div id="sidebar-wrapper" class="collapse sidebar-collapse">
+	
+		<div id="search">
+			<!--
+			<form>
+				<input class="form-control input-sm" type="text" name="search" placeholder="Search..." />
+				<button type="submit" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+			</form>		
+			-->
+		</div> <!-- #search -->
+		
+		<!--
+		<nav id="sidebar">		
+			
+			<ul id="main-nav" class="open-active">			
+
+				<li class="">				
+					<a href="#">
+						<i class="fa fa-dashboard"></i>
+						Dashboard
+					</a>				
+				</li>
+
+			</ul>
+					
+		</nav>
+		-->
+
+	</div> <!-- /#sidebar-wrapper -->
+
+	
+	<div id="content_full">		
+		
+		<div id="content-header">
+			<br><br>
+			<center><b><font size="5">Demo - Predict if a Person will Default on a Loan</font></b></center> 
+		</div> <!-- #content-header -->	
+
+
+
+
+		<div id="content-container">			
+
+
+
+
+
+<div class="row">
+
+	<div class="col-md-2"></div>
+	
+	<div class="col-md-8">
+
+		<div class="portlet">
+
+			<div class="portlet-header">
+
+				<h3>
+					Enter customer details
+				</h3>
+
+			</div> <!-- /.portlet-header -->
+
+			<div class="portlet-content">
+
+					<div class="tab-content stacked-content">
+
+						<form class="form-signin" action="/index" method="POST">
+
+							<div class="row">
+				          	<div class="form-group">
+				          		<label class="col-md-3">Loan Amount</label>
+				          		<div class="col-md-7">
+				          			<input type="text" name="loan_amnt" id="loan_amnt" class="form-control" {% if loan_amnt %}value="{{loan_amnt}}"{% endif %} />
+				          		</div> <!-- /.col -->
+				          		<div class="col-md-3"></div>
+				          	</div> <!-- /.form-group -->
+				          	</div>
+
+				          	<div class="row">
+							<div class="form-group">	
+								<label class="col-md-3">Term</label>
+								<div class="col-md-7">
+								<select id="term" name="term" class="form-control"> 
+									<option value="36 months" {% if term == "36 months"%}selected{% endif %}>36 months</option>
+									<option value="60 months" {% if term == "60 months"%}selected{% endif %}>60 months</option>
+								</select>
+								</div>
+								<div class="col-md-3"></div>
+							</div>
+							</div>
+
+				          	<div class="row">
+							<div class="form-group">	
+								<label class="col-md-3">Employment Length</label>
+								<div class="col-md-7">
+								<select id="emp_length" name="emp_length" class="form-control">
+									<option value="n/a"       {% if emp_length == "n/a"%}selected{% endif %}>n/a</option>
+									<option value="< 1 year"  {% if emp_length == "< 1 year"%}selected{% endif %}>< 1 year</option>
+									<option value="1 year"    {% if emp_length == "1 year"%}selected{% endif %}>1 year</option>
+									<option value="2 years"   {% if emp_length == "2 years"%}selected{% endif %}>2 years</option>
+									<option value="3 years"   {% if emp_length == "3 years"%}selected{% endif %}>3 years</option>
+									<option value="4 years"   {% if emp_length == "4 years"%}selected{% endif %}>4 years</option>
+									<option value="5 years"   {% if emp_length == "5 years"%}selected{% endif %}>5 years</option>
+									<option value="6 years"   {% if emp_length == "6 years"%}selected{% endif %}>6 years</option>
+									<option value="7 years"   {% if emp_length == "7 years"%}selected{% endif %}>7 years</option>
+									<option value="8 years"   {% if emp_length == "8 years"%}selected{% endif %}>8 years</option>
+									<option value="9 years"   {% if emp_length == "9 years"%}selected{% endif %}>9 years</option>
+									<option value="10+ years" {% if emp_length == "10+ years"%}selected{% endif %}>10+ years</option>
+								</select>
+								</div>
+							</div>
+							</div>
+
+				          	<div class="row">
+							<div class="form-group">	
+								<label class="col-md-3">Home Ownership</label>
+								<div class="col-md-7">
+								<select id="home_ownership" name="home_ownership" class="form-control">
+									<option value="RENT"{% if home_ownership == "RENT"%}selected{% endif %}>Rent</option>
+									<option value="OWN_MORTGAGE"{% if home_ownership == "OWN_MORTGAGE"%}selected{% endif %}>Own/Mortgage</option>
+									<option value="OTHER"{% if home_ownership == "OTHER"%}selected{% endif %}>Other</option>
+								</select>
+								</div>
+							</div>
+							</div>
+
+				          	<div class="row">
+							<div class="form-group">	
+								<label class="col-md-3">Purpose</label>
+								<div class="col-md-7">
+								<select id="purpose" name="purpose" class="form-control">
+									<option value="debt_consolidation"{% if purpose == "debt_consolidation"%}selected{% endif %}>Debt Consolidation</option>
+									<option value="credit_card"{% if purpose == "credit_card"%}selected{% endif %}>Credit Card</option>
+									<option value="home_improvement"{% if purpose == "home_improvement"%}selected{% endif %}>Home Improvement</option>
+									<option value="credit_card"{% if purpose == "credit_card"%}selected{% endif %}>Credit Card</option>
+									<option value="other"{% if purpose == "other"%}selected{% endif %}>Other</option>
+									<option value="major_purchase"{% if purpose == "major_purchase"%}selected{% endif %}>Major Purchase</option>
+									<option value="small_business"{% if purpose == "small_business"%}selected{% endif %}>Small Business</option>
+									<option value="car"{% if purpose == "car"%}selected{% endif %}>Car</option>
+									<option value="medical"{% if purpose == "medical"%}selected{% endif %}>Medical</option>
+									<option value="moving"{% if purpose == "moving"%}selected{% endif %}>Moving</option>
+									<option value="vacation"{% if purpose == "vacation"%}selected{% endif %}>Vacation</option>
+									<option value="house"{% if purpose == "house"%}selected{% endif %}>House</option>
+									<option value="wedding"{% if purpose == "wedding"%}selected{% endif %}>Wedding</option>
+									<option value="renewable_energy"{% if purpose == "renewable_energy"%}selected{% endif %}>Renewable Energy</option>
+									<option value="educational"{% if purpose == "educational"%}selected{% endif %}>Educational</option>
+								</select>
+								</div>
+							</div>
+							</div>
+
+				          	<div class="row">
+				          	<div class="form-group">
+				          		<label class="col-md-3">State</label>
+				          		<div class="col-md-7">
+				          		<select id="addr_state" name="addr_state" class="form-control">
+									<option value="AL"{% if addr_state == "AL"%}selected{% endif %}>AL</option>
+									<option value="AK"{% if addr_state == "AK"%}selected{% endif %}>AK</option>
+									<option value="AR"{% if addr_state == "AR"%}selected{% endif %}>AR</option>	
+									<option value="AZ"{% if addr_state == "AZ"%}selected{% endif %}>AZ</option>
+									<option value="CA"{% if addr_state == "CA"%}selected{% endif %}>CA</option>
+									<option value="CO"{% if addr_state == "CO"%}selected{% endif %}>CO</option>
+									<option value="CT"{% if addr_state == "CT"%}selected{% endif %}>CT</option>
+									<option value="DC"{% if addr_state == "DC"%}selected{% endif %}>DC</option>
+									<option value="DE"{% if addr_state == "DE"%}selected{% endif %}>DE</option>
+									<option value="FL"{% if addr_state == "FL"%}selected{% endif %}>FL</option>
+									<option value="GA"{% if addr_state == "GA"%}selected{% endif %}>GA</option>
+									<option value="HI"{% if addr_state == "HI"%}selected{% endif %}>HI</option>
+									<option value="IA"{% if addr_state == "IA"%}selected{% endif %}>IA</option>	
+									<option value="ID"{% if addr_state == "ID"%}selected{% endif %}>ID</option>
+									<option value="IL"{% if addr_state == "IL"%}selected{% endif %}>IL</option>
+									<option value="IN"{% if addr_state == "IN"%}selected{% endif %}>IN</option>
+									<option value="KS"{% if addr_state == "KS"%}selected{% endif %}>KS</option>
+									<option value="KY"{% if addr_state == "KY"%}selected{% endif %}>KY</option>
+									<option value="LA"{% if addr_state == "LA"%}selected{% endif %}>LA</option>
+									<option value="MA"{% if addr_state == "MA"%}selected{% endif %}>MA</option>
+									<option value="MD"{% if addr_state == "MD"%}selected{% endif %}>MD</option>
+									<option value="ME"{% if addr_state == "ME"%}selected{% endif %}>ME</option>
+									<option value="MI"{% if addr_state == "MI"%}selected{% endif %}>MI</option>
+									<option value="MN"{% if addr_state == "MN"%}selected{% endif %}>MN</option>
+									<option value="MO"{% if addr_state == "MO"%}selected{% endif %}>MO</option>	
+									<option value="MS"{% if addr_state == "MS"%}selected{% endif %}>MS</option>
+									<option value="MT"{% if addr_state == "MT"%}selected{% endif %}>MT</option>
+									<option value="NC"{% if addr_state == "NC"%}selected{% endif %}>NC</option>	
+									<option value="NE"{% if addr_state == "NE"%}selected{% endif %}>NE</option>
+									<option value="NH"{% if addr_state == "NH"%}selected{% endif %}>NH</option>
+									<option value="NJ"{% if addr_state == "NJ"%}selected{% endif %}>NJ</option>
+									<option value="NM"{% if addr_state == "NM"%}selected{% endif %}>NM</option>			
+									<option value="NV"{% if addr_state == "NV"%}selected{% endif %}>NV</option>
+									<option value="NY"{% if addr_state == "NY"%}selected{% endif %}>NY</option>
+									<option value="ND"{% if addr_state == "ND"%}selected{% endif %}>ND</option>
+									<option value="OH"{% if addr_state == "OH"%}selected{% endif %}>OH</option>
+									<option value="OK"{% if addr_state == "OK"%}selected{% endif %}>OK</option>
+									<option value="OR"{% if addr_state == "OR"%}selected{% endif %}>OR</option>
+									<option value="PA"{% if addr_state == "PA"%}selected{% endif %}>PA</option>
+									<option value="RI"{% if addr_state == "RI"%}selected{% endif %}>RI</option>
+									<option value="SC"{% if addr_state == "SC"%}selected{% endif %}>SC</option>
+									<option value="SD"{% if addr_state == "SD"%}selected{% endif %}>SD</option>
+									<option value="TN"{% if addr_state == "TN"%}selected{% endif %}>TN</option>
+									<option value="TX"{% if addr_state == "TX"%}selected{% endif %}>TX</option>
+									<option value="UT"{% if addr_state == "UT"%}selected{% endif %}>UT</option>
+									<option value="VT"{% if addr_state == "VT"%}selected{% endif %}>VT</option>
+									<option value="VA"{% if addr_state == "VA"%}selected{% endif %}>VA</option>
+									<option value="WA"{% if addr_state == "WA"%}selected{% endif %}>WA</option>
+									<option value="WI"{% if addr_state == "WI"%}selected{% endif %}>WI</option>	
+									<option value="WV"{% if addr_state == "WV"%}selected{% endif %}>WV</option>
+									<option value="WY"{% if addr_state == "WY"%}selected{% endif %}>WY</option>
+								</select>	
+				          		</div>
+				          	</div> 
+							</div>
+
+				          	<div class="row">
+				          	<div class="form-group">
+				          		<label class="col-md-3">Annual Income</label>
+				          		<div class="col-md-7">
+				          			<input type="text" name="annual_inc" id="annual_inc" class="form-control"  {% if annual_inc %}value="{{annual_inc}}"{% endif %} />
+				          		</div> 
+				          	</div>
+							</div>
+
+				          	<div class="row">
+				          	<div class="form-group">
+				          		<label class="col-md-3">Inquries in the Last 6 Months</label>
+				          		<div class="col-md-7">
+				          			<input type="text" name="inq_last_6mths" id="inq_last_6mths" class="form-control"  {% if inq_last_6mths %}value="{{inq_last_6mths}}"{% endif %} />
+				          		</div> 
+				          	</div>
+							</div>
+				          	
+				          	<br />
+
+				          	<div class="row">
+				          	<div class="form-group">
+
+				          		<div class="col-md-7 col-md-push-3">
+				          			<br>
+				          			
+				          			<button type="submit" class="btn btn-primary">Get Score</button>
+				          		</div> <!-- /.col -->
+
+				          	</div> <!-- /.form-group -->
+				          	</div>
+
+				        </form>
+
+
+				    </div>
+
+
+
+
+			</div> <!-- /.portlet-content -->
+
+		</div> <!-- /.portlet -->
+
+	</div> <!-- /col-md -->
+
+	<div class="col-md-2"></div>
+
+</div>
+
+
+
+{% if default_prob %}
+
+<div class="row">
+
+	<div class="col-md-2"></div>
+
+	<div class="col-md-8">
+		<center>
+			<br>
+			<b><font size="5" color="blue">{{ result }}</font></b>
+			<br><b><font size="3" color="blue">( Default Probability: {{ default_prob }} )</font></b>
+		</center>
+	</div>
+
+	<div class="col-md-2"></div>
+
+</div>
+
+{% endif %}
+
+
+
+
+		</div> <!-- /#content-container -->
+		
+	</div> <!-- #content -->
+	
+	
+</div> <!-- #wrapper -->
+
+<footer id="footer">
+	<ul class="nav pull-right">
+		<li>
+			Copyright &copy; 2017
+		</li>
+	</ul>
+</footer>
+
+<!--
+##################################
+Function to delete row in table
+##################################
+-->
+<script>
+	function deleteRow(btn){
+		var row = btn.parentNode.parentNode;
+		row.parentNode.removeChild(row)
+	}
+</script>
+
+
+
+
+
+<script>
+function update_values() {
+            $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+            $.getJSON($SCRIPT_ROOT+"/mytest",
+                function(data) {
+                    $("#zout").text(data.zout+" %")
+                });
+        }
+</script>
+
+
+<script src="../static/js/libs/jquery-1.9.1.min.js"></script>
+<script src="../static/js/libs/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="../static/js/libs/bootstrap.min.js"></script>
+<script src="../static/js/App.js"></script>
+<script src="../static/js/popups.js"></script>
+<script src="../static/js/demos/form-extended.js"></script>
+<script src="../static/js/libs/jquery-1.9.1.min.js"></script>
+<script src="../static/js/libs/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="../static/js/libs/bootstrap.min.js"></script>
+<script src="../static/js/plugins/howl/howl.js"></script>
+<script src="../static/js/plugins/select2/select2.js"></script>
+<script src="../static/js/plugins/icheck/jquery.icheck.js"></script>
+<script src="../static/js/plugins/magnific/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/plugins/magnific/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="../static/js/plugins/timepicker/bootstrap-timepicker.js"></script>
+<script src="../static/js/plugins/simplecolorpicker/jquery.simplecolorpicker.js"></script>
+<script src="../static/js/plugins/autosize/jquery.autosize.min.js"></script>
+<script src="../static/js/plugins/textarea-counter/jquery.textarea-counter.js"></script>
+<script src="../static/js/plugins/fileupload/bootstrap-fileupload.js"></script>
+
+
+</body>
+</html>
