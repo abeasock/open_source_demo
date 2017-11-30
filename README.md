@@ -16,7 +16,7 @@ The **Dockerfile** installs the following tools: <br>
 The **assets** folder contains: <br>
 &nbsp;&nbsp;&nbsp;- lending_club folder contains the lending club data <br>
 &nbsp;&nbsp;&nbsp;- lending_club.db - the SQLite3 Database created for Superset <br>
-&nbsp;&nbsp;&nbsp;- loans_updated.csv - loan.csv prepped for building lending_club.db <br>
+&nbsp;&nbsp;&nbsp;- loans_updated.zip - loan_updated.csv prepped for building lending_club.db <br>
 &nbsp;&nbsp;&nbsp;- flask_deployment_demo - folder contains the flask app used to deploy the model built in loans.json <br>
 &nbsp;&nbsp;&nbsp;- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
 <br>
@@ -72,11 +72,15 @@ Flask app can be run using the command below. After running the command, open Br
 `/spark/bin/spark-submit --py-files /sparkling-water-2.1.14/py/build/dist/h2o_pysparkling_2.1-2.1.14.zip /assets/flask_deployment_demo/loan_app_demo.py`
 
 ## Superset
-First, open Superset and add the saved loans SQL database to Superset by clicking 'Sources' in the top banner > 'Databases' > the plus sign in the upper right corner to add a new database. This will take you to an Edit Database page. Fill in:
+First, open Superset and add the saved loans SQL database to Superset by clicking 'Sources' in the top banner > 'Databases' > the plus sign in the upper right corner to add a new database. This will open the 'Edit Database' page. Fill in:
 Database: lending_club 
 SQLAlchemy URI: sqlite:////assets/lending_club.db
 Click 'Test Connection'
 A message will pop up if your connection is successful
+
+Second,  click 'Sources' in the top banner > 'Tables' > the plus sign in the upper right corner to add a new table. This will open the 'Add Table' page. Fill in:
+Database: lending_club
+Table Name: loans_v3
 
 Once database is added, you can add the saved dashboard used in the demo. Click 'Manage' in the top banner > 'Import Dashboards' > 'Choose File' open_source_demo/assets/superset_dashboard_loans.pickle (where repository was downloaded locally) and click 'Upload'<br>
 The dashboard for Lending Club should now be avialable under Dashboards<br><br>
