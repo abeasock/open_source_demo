@@ -34,8 +34,8 @@ Steps to build a Docker image: <br>
 1. Clone this repo
 	git clone https://github.com/abeasock/open_source_demo.git <br>
 	or <br>
-	Manually download by clicking the "**Clone or Download button above**" and "**Download Zip**" <br><br>
-	Unzip the folder and place it in the desired location
+	Manually download by clicking the "**Clone or Download button above**" and "**Download Zip**" <br>
+	Unzip the folder and place it in the desired location<br><br>
 2. Build the image <br>
    `cd <directory containing the Dockerfile>` <br>
    `docker build -t open_source_demo .` <br>
