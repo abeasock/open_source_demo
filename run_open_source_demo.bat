@@ -2,7 +2,7 @@
 echo.
 echo.
 echo.
-echo Starting the Open Source Demo Docker Containers...
+echo Starting the Open Source Demo Docker Container...
 sleep 2
 docker stop open_source_demo
 docker rm open_source_demo
