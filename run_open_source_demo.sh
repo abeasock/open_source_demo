@@ -2,7 +2,7 @@ echo
 echo ""
 echo ""
 echo ""
-echo "Starting the Sparkling Water Docker Containers..."
+echo "Starting the Sparkling Water Docker Container..."
 sleep 2
 docker stop sparkling_water
 docker rm sparkling_water
