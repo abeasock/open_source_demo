@@ -72,6 +72,8 @@ Flask app can be run using the command below. After running the command, open Br
 `/spark/bin/spark-submit --py-files /sparkling-water-2.2.6/py/build/dist/h2o_pysparkling_2.2-2.2.6.zip /assets/flask_deployment_demo/loan_app_demo.py`
 
 ## Superset
+To add the loans data to Superset, open Superset and click 'Sources' in the top banner > Upload a CSV. Fill in the required fields. The location to the CSV: /assets/loans_updated.csv
+
 First, open Superset and add the saved loans SQL database to Superset by clicking 'Sources' in the top banner > 'Databases' > the plus sign in the upper right corner to add a new database. This will open the 'Edit Database' page. Fill in:
 Database: lending_club 
 SQLAlchemy URI: sqlite:////assets/lending_club.db
