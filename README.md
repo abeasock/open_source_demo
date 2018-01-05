@@ -85,6 +85,3 @@ Table Name: loans_v3
 
 Once database is added, you can add the saved dashboard used in the demo. Click 'Manage' in the top banner > 'Import Dashboards' > 'Choose File' open_source_demo/assets/superset_dashboard_loans.pickle (where repository was downloaded locally) and click 'Upload'<br>
 The dashboard for Lending Club should now be avialable under Dashboards<br><br>
-
-## Save Changes
-`docker commit open_source_demo <new_name>`
