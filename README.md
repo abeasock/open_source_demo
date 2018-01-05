@@ -61,7 +61,8 @@ Steps to build a Docker image: <br>
 ## Ports
 Zeppelin: http://localhost:19090 <br>
 Superset: http://localhost:18088 <br>
-Flask: http://localhost:15555 <br><br>
+Flask: http://localhost:15555 <br>
+H2O Flow: http://localhost:54321 <br><br>
 
 ## Zeppelin Notebook
 To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click 'Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json
