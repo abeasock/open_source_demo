@@ -28,8 +28,7 @@ The data used for the project is too large to upload to GitHub. The csv and data
 [Kaggle Lending Club Data](https://www.kaggle.com/wendykan/lending-club-loan-data/data)
 
 ## Getting Started
-This assumes you have Docker installed and basic knowledge of using it. 
-[Docker](https://www.docker.com/)
+This assumes you have Docker installed and basic knowledge of using it. (https://www.docker.com/)
 
 ## Build
 Steps to build a Docker image: <br>
