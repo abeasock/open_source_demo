@@ -21,7 +21,11 @@ The **assets** folder contains: <br>
 **Additional Files:** <br>
 run_open_source_demo.bat - file to quick start the Docker image on Windows
 <br>
-run_open_source_demo.sh - file to quick start the Docker image on Mac
+run_open_source_demo.sh - file to quick start the Docker image on Mac <br>
+
+**Data:** <br>
+The data used for the project is too large to upload to GitHub. The csv and data dictionary is available for download on Kaggle:
+<Kaggle Lending Club Data>(https://www.kaggle.com/wendykan/lending-club-loan-data/data)
 
 ## Getting Started
 This assumes you have Docker installed and basic knowledge of using it. 
