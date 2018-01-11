@@ -25,11 +25,11 @@ run_open_source_demo.sh - file to quick start the Docker image on Mac <br>
 
 **Data:** <br>
 The data used for the project is too large to upload to GitHub. The csv and data dictionary is available for download on Kaggle:
-<Kaggle Lending Club Data>(https://www.kaggle.com/wendykan/lending-club-loan-data/data)
+[Kaggle Lending Club Data](https://www.kaggle.com/wendykan/lending-club-loan-data/data)
 
 ## Getting Started
 This assumes you have Docker installed and basic knowledge of using it. 
-<Docker>(https://www.docker.com/)
+[Docker](https://www.docker.com/)
 
 ## Build
 Steps to build a Docker image: <br>
