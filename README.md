@@ -52,8 +52,9 @@ H2O Flow: http://localhost:54321 <br><br>
 To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click 'Add from URL', and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json
 
 ## Flask
-Flask app can be run using the command below. After running the command, open Browser and go to: http://localhost:15555/ <br>
+Flask app can started by running the following command: <br>
 `/spark/bin/spark-submit --py-files /sparkling-water-2.2.6/py/build/dist/h2o_pysparkling_2.2-2.2.6.zip /assets/flask_deployment_demo/loan_app_demo.py`
+After running the command, open Browser and go to: http://localhost:15555/
 
 ## Superset
 To add the loans data to Superset, open Superset and click 'Sources' in the top banner > Upload a CSV. Fill in the required fields. The location to the CSV: /assets/loans_updated.csv
