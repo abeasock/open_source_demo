@@ -53,7 +53,7 @@ To import loans.json: go to Zeppelin in the browser, click "Import Note" on the 
 
 ## Flask
 Flask app can started by running the following command: <br>
-`/spark/bin/spark-submit --py-files /sparkling-water-2.2.6/py/build/dist/h2o_pysparkling_2.2-2.2.6.zip /assets/flask_deployment_demo/loan_app_demo.py`
+`/spark/bin/spark-submit --py-files /sparkling-water-2.2.6/py/build/dist/h2o_pysparkling_2.2-2.2.6.zip /assets/flask_deployment_demo/loan_app_demo.py` <br>
 After running the command, open Browser and go to: http://localhost:15555/
 
 ## Superset
