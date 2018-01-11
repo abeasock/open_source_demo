@@ -60,7 +60,11 @@ Flask app can started by running the following command: <br>
 After running the command, open Browser and go to: http://localhost:15555/
 
 ## Superset
-To add the loans data to Superset, open Superset and click "Sources" in the top banner > Upload a CSV. Fill in the required fields. The location to the CSV: /assets/loans_updated.csv
+To access the Superset dashboard built for the loans data, you will need to follow the steps below:
+In the docker container execute the command:
+
+
+I build, open Superset and click "Sources" in the top banner > Upload a CSV. Fill in the required fields. The location to the CSV: /assets/loans_updated.csv
 
 First, open Superset and add the saved loans SQL database to Superset by clicking "Sources" in the top banner > Databases > the plus sign in the upper right corner to add a new database. This will open the "Edit Database" page. Fill in:
 Database: lending_club 
