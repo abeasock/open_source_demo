@@ -37,7 +37,7 @@ Steps to build a Docker image: <br>
 2. Build the image <br>
    `cd <directory containing the Dockerfile>` <br>
    `docker build -t open_source_demo .` <br>
-   *Note: A path is a mandatory argument for the build command. I used '.' because I navigated in the command line to the directory 	     containing the dockerfile in the previous step. I used the -t option to tag the image.* <br><br>
+   *Note: A path is a mandatory argument for the build command. I used "." because I navigated in the command line to the directory 	     containing the dockerfile in the previous step. I used the -t option to tag the image.* <br><br>
 3. Run the Docker image <br>
    `cd <directory containing the run_open_source_demo file>` <br>
    `run_open_source_demo.bat or run_open_source_demo.sh` <br><br>
@@ -49,7 +49,7 @@ Flask: http://localhost:15555 <br>
 H2O Flow: http://localhost:54321 <br><br>
 
 ## Zeppelin Notebook
-To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click 'Add from URL', and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json
+To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click "Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json
 
 ## Flask
 Flask app can started by running the following command: <br>
@@ -57,17 +57,17 @@ Flask app can started by running the following command: <br>
 After running the command, open Browser and go to: http://localhost:15555/
 
 ## Superset
-To add the loans data to Superset, open Superset and click 'Sources' in the top banner > Upload a CSV. Fill in the required fields. The location to the CSV: /assets/loans_updated.csv
+To add the loans data to Superset, open Superset and click "Sources" in the top banner > Upload a CSV. Fill in the required fields. The location to the CSV: /assets/loans_updated.csv
 
-First, open Superset and add the saved loans SQL database to Superset by clicking 'Sources' in the top banner > 'Databases' > the plus sign in the upper right corner to add a new database. This will open the 'Edit Database' page. Fill in:
+First, open Superset and add the saved loans SQL database to Superset by clicking "Sources" in the top banner > Databases > the plus sign in the upper right corner to add a new database. This will open the "Edit Database" page. Fill in:
 Database: lending_club 
 SQLAlchemy URI: sqlite:////assets/lending_club.db
-Click 'Test Connection'
+Click "Test Connection"
 A message will pop up if your connection is successful
 
-Second,  click 'Sources' in the top banner > 'Tables' > the plus sign in the upper right corner to add a new table. This will open the 'Add Table' page. Fill in:
+Second,  click "Sources" in the top banner > Tables > the plus sign in the upper right corner to add a new table. This will open the "Add Table" page. Fill in:
 Database: lending_club
 Table Name: loans_v3
 
-Once database is added, you can add the saved dashboard used in the demo. Click 'Manage' in the top banner > 'Import Dashboards' > 'Choose File' open_source_demo/assets/superset_dashboard_loans.pickle (where repository was downloaded locally) and click 'Upload'<br>
+Once database is added, you can add the saved dashboard used in the demo. Click "Manage" in the top banner > Import Dashboards > Choose File open_source_demo/assets/superset_dashboard_loans.pickle (where repository was downloaded locally) and click "Upload"<br>
 The dashboard for Lending Club should now be avialable under Dashboards<br><br>
