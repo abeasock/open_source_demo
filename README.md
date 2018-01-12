@@ -17,6 +17,8 @@ The **assets** folder contains: <br>
 &nbsp;&nbsp;&nbsp;- loans_updated.zip - contains loans_updated.csv (data prepped for Superset) <br>
 &nbsp;&nbsp;&nbsp;- flask_deployment_demo - folder contains the flask app used to deploy the model built in loans.json <br>
 &nbsp;&nbsp;&nbsp;- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
+&nbsp;&nbsp;&nbsp;- create_database.sh - shell script to unzip loans_updated.csv, create the SQLite3 database `lending_club.db`, and run create_table.sql to create the SQL table. <br>
+&nbsp;&nbsp;&nbsp;- create_table.sql - creates the SQL table `loans_v3` from loans_updated.csv <br>
 <br>
 **Additional Files:** <br>
 run_open_source_demo.bat - file to quick start the Docker image on Windows
@@ -60,21 +62,28 @@ Flask app can started by running the following command: <br>
 After running the command, open Browser and go to: http://localhost:15555/
 
 ## Superset
+Username and password are set in the Dockerfile:
+Username: Admin
+Password: Admin
+
 To access the Superset dashboard built for the loans data, you will need to follow the steps below:
-In the docker container execute the command:
+1. In the docker container execute the command:
+`/assets/create_database.sh`
+This will create a sqlite3 database named `lending_club.db` with a table named `loans_v3`
 
+2. Open Superset and log-in
 
-I build, open Superset and click "Sources" in the top banner > Upload a CSV. Fill in the required fields. The location to the CSV: /assets/loans_updated.csv
-
-First, open Superset and add the saved loans SQL database to Superset by clicking "Sources" in the top banner > Databases > the plus sign in the upper right corner to add a new database. This will open the "Edit Database" page. Fill in:
+3. Add the `lending_club.db` to Superset by "Sources" in the top banner > "Databases" > the plus sign in the upper right corner to add a new database. This will open the "Edit Database" page. Fill in:
 Database: lending_club 
 SQLAlchemy URI: sqlite:////assets/lending_club.db
 Click "Test Connection"
 A message will pop up if your connection is successful
+Click "Save" at the bottom
 
-Second,  click "Sources" in the top banner > Tables > the plus sign in the upper right corner to add a new table. This will open the "Add Table" page. Fill in:
+4. Add the table `loans_v3` to Superset by clicking "Sources" in the top banner > "Tables" > the plus sign in the upper right corner to add a new table. This will open the "Add Table" page. Fill in:
 Database: lending_club
 Table Name: loans_v3
+A message should print on the page that a table was created.
 
-Once database is added, you can add the saved dashboard used in the demo. Click "Manage" in the top banner > Import Dashboards > Choose File open_source_demo/assets/superset_dashboard_loans.pickle (where repository was downloaded locally) and click "Upload"<br>
-The dashboard for Lending Club should now be avialable under Dashboards<br><br>
+5. Add the saved dashboard used in the demo by clicking "Manage" in the top banner > "Import Dashboards" > Choose File open_source_demo/assets/superset_dashboard_loans.pickle (where repository was downloaded locally) and click "Upload"<br>
+The dashboard for Lending Club should now be avialable under Dashboards. Click on it to view (it may take a few minutes for all of the slices in the dashboard to load). <br><br>
