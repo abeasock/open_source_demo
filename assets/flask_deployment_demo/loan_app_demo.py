@@ -63,7 +63,7 @@ def index():
         for var in string_vars:
             df[var] = df[var].asfactor()
         
-        saved_model     = h2o.load_model('/assets/flask_deployment_demo/GBM_model_python_1508793821048_133')
+        saved_model     = h2o.load_model('/assets/flask_deployment_demo/GBM_model_python_1515678740025_16')
         predicted       = saved_model.predict(df)
         predicted_df    = predicted.as_data_frame()
         default_prob    = round(predicted_df['default'][0], 3)
@@ -93,3 +93,15 @@ if __name__ == "__main__":
     app.run(debug=False, threaded=True, host='0.0.0.0', port=5555)
 
 #END
+
+'''
+
+loan_amnt       = float(12000)
+term            = '36 months'
+emp_length      = '10+ years'
+home_ownership  = 'OWN'
+purpose         = 'credit_card'
+addr_state      = 'TX'
+annual_inc      = float(145000)
+inq_last_6mths  = float(0)
+'''
