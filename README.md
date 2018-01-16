@@ -64,8 +64,8 @@ After running the command, open Browser and go to: http://localhost:15555/
 
 ## Superset
 Username and password are set in the Dockerfile: <br>
-Username: Admin <br>
-Password: Admin <br>
+Username: *Admin* <br>
+Password: *Admin* <br>
 
 To access the Superset dashboard built for the loans data, you will need to follow the steps below:
 1. In the docker container execute the command:
