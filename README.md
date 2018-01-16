@@ -17,7 +17,8 @@ The **assets** folder contains: <br>
 &nbsp;&nbsp;&nbsp;- loans_updated.zip - contains loans_updated.csv (data prepped for Superset) <br>
 &nbsp;&nbsp;&nbsp;- flask_deployment_demo - folder contains the flask app used to deploy the model built in loans.json <br>
 &nbsp;&nbsp;&nbsp;- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
-&nbsp;&nbsp;&nbsp;- create_database.sh - shell script to unzip loans_updated.csv, create the SQLite3 database `lending_club.db`, and run create_table.sql to create the SQL table. <br>
+&nbsp;&nbsp;&nbsp;- create_database.sh - shell script to unzip loans_updated.csv, create the SQLite3 database `lending_club.db`, 
+		    and run create_table.sql to create the SQL table. <br>
 &nbsp;&nbsp;&nbsp;- create_table.sql - creates the SQL table `loans_v3` from loans_updated.csv <br>
 <br>
 **Additional Files:** <br>
