@@ -45,13 +45,13 @@ Steps to build a Docker image: <br>
    *Note: A path is a mandatory argument for the build command. I used "." because I navigated in the command line to the directory 	     containing the dockerfile in the previous step. I used the -t option to tag the image.* <br><br>
 3. Run the Docker image <br>
    `cd <directory containing the run_open_source_demo file>` <br>
-   `run_open_source_demo.bat or run_open_source_demo.sh` <br><br>
+   `run_open_source_demo.bat or run_open_source_demo.sh` <br>
 
 ## Ports
 Zeppelin: http://localhost:19090 <br>
 Superset: http://localhost:18088 <br>
 Flask: http://localhost:15555 <br>
-H2O Flow: http://localhost:54321 <br><br>
+H2O Flow: http://localhost:54321 <br>
 
 ## Zeppelin Notebook
 To import loans.json: go to Zeppelin in the browser, click "Import Note" on the home page, a pop up will appear, click "Add from URL", and enter a name to import as and the URL https://raw.githubusercontent.com/abeasock/open_source_demo/master/assets/loans.json
