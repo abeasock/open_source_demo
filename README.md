@@ -74,15 +74,15 @@ This will create a sqlite3 database named `lending_club.db` with a table named `
 2. Open Superset and log-in
 
 3. Add the `lending_club.db` to Superset by "Sources" in the top banner > "Databases" > the plus sign in the upper right corner to add a new database. This will open the "Edit Database" page. Fill in:
-Database: lending_club 
-SQLAlchemy URI: sqlite:////assets/lending_club.db
+Database: *lending_club* 
+SQLAlchemy URI: *sqlite:////assets/lending_club.db*
 Click "Test Connection"
 A message will pop up if your connection is successful
 Click "Save" at the bottom
 
 4. Add the table `loans_v3` to Superset by clicking "Sources" in the top banner > "Tables" > the plus sign in the upper right corner to add a new table. This will open the "Add Table" page. Fill in:
-Database: lending_club
-Table Name: loans_v3
+Database: *lending_club*
+Table Name: *loans_v3*
 A message should print on the page that a table was created.
 
 5. Add the saved dashboard used in the demo by clicking "Manage" in the top banner > "Import Dashboards" > Choose File open_source_demo/assets/superset_dashboard_loans.pickle (where repository was downloaded locally) and click "Upload"<br>
