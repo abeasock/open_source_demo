@@ -13,7 +13,6 @@ The **Dockerfile** installs the following tools: <br>
 &nbsp;&nbsp;&nbsp;- Apache Superset <br>
 
 The **assets** folder contains: <br>
-&nbsp;&nbsp;&nbsp;- lending_club folder contains the lending club data <br>
 &nbsp;&nbsp;&nbsp;- loans_updated.zip - contains loans_updated.csv (data prepped for Superset) <br>
 &nbsp;&nbsp;&nbsp;- flask_deployment_demo - folder contains the flask app used to deploy the model built in loans.json <br>
 &nbsp;&nbsp;&nbsp;- superset_dashboard_loans.pickle - the dashboard built in Superset to visualize the loan data <br>
@@ -28,7 +27,7 @@ run_open_source_demo.sh - file to quick start the Docker image on Mac <br>
 
 **Data:** <br>
 The data used for the project is too large to upload to GitHub. The csv and data dictionary is available for download on Kaggle:
-[Kaggle Lending Club Data](https://www.kaggle.com/wendykan/lending-club-loan-data/data)
+[Kaggle Lending Club Data](https://www.kaggle.com/wendykan/lending-club-loan-data/data). This is the csv used in the loans Zeppelin notebook.
 
 ## Getting Started
 This assumes you have Docker installed and basic knowledge of using it. (https://www.docker.com/)
