@@ -11,12 +11,12 @@ echo ""
 echo ""
 echo "Starting Apache Superset on Port 18088..."
 sleep 3
-START docker exec open_source_demo superset runserver
+docker exec open_source_demo superset runserver &
 echo ""
 echo ""
 echo "Starting Apache Zeppelin on Port 19090..."
 sleep 3
-START docker exec open_source_demo /zeppelin/bin/zeppelin-daemon.sh start
+docker exec open_source_demo /zeppelin/bin/zeppelin-daemon.sh start
 echo ""
 echo ""
 docker cp ./assets open_source_demo:/.
