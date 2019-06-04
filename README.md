@@ -86,4 +86,8 @@ Table Name: *loans_v3* <br>
 A message should print on the page that a table was created.
 
 5. Add the saved dashboard used in the demo by clicking "Manage" in the top banner > "Import Dashboards" > Choose File *open_source_demo/assets/superset_dashboard_loans.pickle* (where repository was downloaded locally) and click "Upload"<br><br>
-The dashboard for Lending Club should now be avialable under Dashboards. Click on it to view (it may take a few minutes for all of the slices in the dashboard to load). 
+The dashboard for Lending Club should now be avialable under Dashboards. Click on it to view (it may take a few minutes for all of the slices in the dashboard to load).
+
+Preview of dashboard:
+
+![alt text](https://github.com/abeasock/open_source_demo/blob/master/superset_dashboard.JPG)
